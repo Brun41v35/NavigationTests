@@ -14,19 +14,10 @@
 		7EAE16DD2C00018C00773A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAE16DC2C00018C00773A6B /* Assets.xcassets */; };
 		7EAE16E02C00018C00773A6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAE16DE2C00018C00773A6B /* LaunchScreen.storyboard */; };
 		7EAE16EB2C00018C00773A6B /* NavigationTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAE16EA2C00018C00773A6B /* NavigationTestsTests.swift */; };
-		7EAE16F52C00018C00773A6B /* NavigationTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAE16F42C00018C00773A6B /* NavigationTestsUITests.swift */; };
-		7EAE16F72C00018C00773A6B /* NavigationTestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAE16F62C00018C00773A6B /* NavigationTestsUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7EAE16E72C00018C00773A6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EAE16C82C00018B00773A6B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7EAE16CF2C00018B00773A6B;
-			remoteInfo = NavigationTests;
-		};
-		7EAE16F12C00018C00773A6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7EAE16C82C00018B00773A6B /* Project object */;
 			proxyType = 1;
@@ -46,9 +37,6 @@
 		7EAE16E12C00018C00773A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EAE16E62C00018C00773A6B /* NavigationTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAE16EA2C00018C00773A6B /* NavigationTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTestsTests.swift; sourceTree = "<group>"; };
-		7EAE16F02C00018C00773A6B /* NavigationTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EAE16F42C00018C00773A6B /* NavigationTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTestsUITests.swift; sourceTree = "<group>"; };
-		7EAE16F62C00018C00773A6B /* NavigationTestsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTestsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EAE16ED2C00018C00773A6B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +62,6 @@
 			children = (
 				7EAE16D22C00018B00773A6B /* NavigationTests */,
 				7EAE16E92C00018C00773A6B /* NavigationTestsTests */,
-				7EAE16F32C00018C00773A6B /* NavigationTestsUITests */,
 				7EAE16D12C00018B00773A6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +71,6 @@
 			children = (
 				7EAE16D02C00018B00773A6B /* NavigationTests.app */,
 				7EAE16E62C00018C00773A6B /* NavigationTestsTests.xctest */,
-				7EAE16F02C00018C00773A6B /* NavigationTestsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +95,6 @@
 				7EAE16EA2C00018C00773A6B /* NavigationTestsTests.swift */,
 			);
 			path = NavigationTestsTests;
-			sourceTree = "<group>";
-		};
-		7EAE16F32C00018C00773A6B /* NavigationTestsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7EAE16F42C00018C00773A6B /* NavigationTestsUITests.swift */,
-				7EAE16F62C00018C00773A6B /* NavigationTestsUITestsLaunchTests.swift */,
-			);
-			path = NavigationTestsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = 7EAE16E62C00018C00773A6B /* NavigationTestsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7EAE16EF2C00018C00773A6B /* NavigationTestsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7EAE17002C00018C00773A6B /* Build configuration list for PBXNativeTarget "NavigationTestsUITests" */;
-			buildPhases = (
-				7EAE16EC2C00018C00773A6B /* Sources */,
-				7EAE16ED2C00018C00773A6B /* Frameworks */,
-				7EAE16EE2C00018C00773A6B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7EAE16F22C00018C00773A6B /* PBXTargetDependency */,
-			);
-			name = NavigationTestsUITests;
-			productName = NavigationTestsUITests;
-			productReference = 7EAE16F02C00018C00773A6B /* NavigationTestsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +149,6 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					7EAE16E52C00018C00773A6B = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 7EAE16CF2C00018B00773A6B;
-					};
-					7EAE16EF2C00018C00773A6B = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 7EAE16CF2C00018B00773A6B;
 					};
@@ -221,7 +169,6 @@
 			targets = (
 				7EAE16CF2C00018B00773A6B /* NavigationTests */,
 				7EAE16E52C00018C00773A6B /* NavigationTestsTests */,
-				7EAE16EF2C00018C00773A6B /* NavigationTestsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +185,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7EAE16E42C00018C00773A6B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EAE16EE2C00018C00773A6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,15 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EAE16EC2C00018C00773A6B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EAE16F72C00018C00773A6B /* NavigationTestsUITestsLaunchTests.swift in Sources */,
-				7EAE16F52C00018C00773A6B /* NavigationTestsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +219,6 @@
 			isa = PBXTargetDependency;
 			target = 7EAE16CF2C00018B00773A6B /* NavigationTests */;
 			targetProxy = 7EAE16E72C00018C00773A6B /* PBXContainerItemProxy */;
-		};
-		7EAE16F22C00018C00773A6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7EAE16CF2C00018B00773A6B /* NavigationTests */;
-			targetProxy = 7EAE16F12C00018C00773A6B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -547,50 +473,6 @@
 			};
 			name = Release;
 		};
-		7EAE17012C00018C00773A6B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QXX4852TTD;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = brunosilva.NavigationTestsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = NavigationTests;
-			};
-			name = Debug;
-		};
-		7EAE17022C00018C00773A6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QXX4852TTD;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = brunosilva.NavigationTestsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = NavigationTests;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -617,15 +499,6 @@
 			buildConfigurations = (
 				7EAE16FE2C00018C00773A6B /* Debug */,
 				7EAE16FF2C00018C00773A6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7EAE17002C00018C00773A6B /* Build configuration list for PBXNativeTarget "NavigationTestsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7EAE17012C00018C00773A6B /* Debug */,
-				7EAE17022C00018C00773A6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
