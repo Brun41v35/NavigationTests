@@ -78,9 +78,7 @@
 			children = (
 				7EAE17032C00034B00773A6B /* AppDelegate */,
 				7EAE16D72C00018B00773A6B /* ViewController.swift */,
-				7EAE16DC2C00018C00773A6B /* Assets.xcassets */,
-				7EAE16DE2C00018C00773A6B /* LaunchScreen.storyboard */,
-				7EAE16E12C00018C00773A6B /* Info.plist */,
+				7EAE17042C0003FA00773A6B /* Resources */,
 			);
 			path = NavigationTests;
 			sourceTree = "<group>";
@@ -100,6 +98,16 @@
 				7EAE16D52C00018B00773A6B /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7EAE17042C0003FA00773A6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7EAE16DC2C00018C00773A6B /* Assets.xcassets */,
+				7EAE16DE2C00018C00773A6B /* LaunchScreen.storyboard */,
+				7EAE16E12C00018C00773A6B /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXX4852TTD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NavigationTests/Info.plist;
+				INFOPLIST_FILE = NavigationTests/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -398,7 +406,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXX4852TTD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NavigationTests/Info.plist;
+				INFOPLIST_FILE = NavigationTests/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
