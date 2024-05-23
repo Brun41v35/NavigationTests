@@ -78,8 +78,7 @@
 		7EAE16D22C00018B00773A6B /* NavigationTests */ = {
 			isa = PBXGroup;
 			children = (
-				7EAE16D32C00018B00773A6B /* AppDelegate.swift */,
-				7EAE16D52C00018B00773A6B /* SceneDelegate.swift */,
+				7EAE17032C00034B00773A6B /* AppDelegate */,
 				7EAE16D72C00018B00773A6B /* ViewController.swift */,
 				7EAE16D92C00018B00773A6B /* Main.storyboard */,
 				7EAE16DC2C00018C00773A6B /* Assets.xcassets */,
@@ -95,6 +94,15 @@
 				7EAE16EA2C00018C00773A6B /* NavigationTestsTests.swift */,
 			);
 			path = NavigationTestsTests;
+			sourceTree = "<group>";
+		};
+		7EAE17032C00034B00773A6B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7EAE16D32C00018B00773A6B /* AppDelegate.swift */,
+				7EAE16D52C00018B00773A6B /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
