@@ -113,9 +113,17 @@
 		7EAE17052C00046C00773A6B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				7EAE17062C00048800773A6B /* HomeViewController.swift */,
+				7EAE17082C0009AF00773A6B /* Home */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7EAE17082C0009AF00773A6B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7EAE17062C00048800773A6B /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
