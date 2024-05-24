@@ -80,11 +80,13 @@ final class HomeViewController: UIViewController {
 
     @objc
     private func didTapPushViewControllerButton() {
-        print("Push")
+        let profileViewController = ProfileViewController(text: "Pushed from Code")
+        navigationController?.pushViewController(profileViewController, animated: true)
     }
 
     @objc
     private func didTapPresentViewControllerButton() {
-        print("Present")
+        let presentViewController = ProfileViewController(text: "Modal from Code")
+        present(presentViewController, animated: true)
     }
 }
