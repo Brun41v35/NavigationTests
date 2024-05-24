@@ -17,8 +17,12 @@ final class HomeViewControllerTests: XCTestCase {
 
         let pushedViewController = navigationController.viewControllers.last
 
-        XCTAssertTrue(pushedViewController is ProfileViewController,
-                      "Expected ProfileViewController, but was \(String(describing: pushedViewController))")
+        guard let profileViewController = pushedViewController as? ProfileViewController else {
+            XCTFail("Expected ProfileViewController, but was \(String(describing: pushedViewController))")
+            return
+        }
+
+        XCTAssertEqual(profileViewController.textLabel.text, "Pushed from Code")
     }
 
     // MARK: - Helpers
