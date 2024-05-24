@@ -4,7 +4,7 @@ final class ProfileViewController: UIViewController {
 
     // MARK: Private Properties
 
-    private let textLabel: UILabel = {
+    private(set) var textLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
