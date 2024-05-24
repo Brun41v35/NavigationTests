@@ -12,7 +12,7 @@ final class HomeViewController: UIViewController {
         return stackView
     }()
 
-    private let pushViewControllerButton: UIButton = {
+    private(set) var pushViewControllerButton: UIButton = {
         let button = UIButton()
         button.setTitle("Push ViewController", for: .normal)
         button.configuration = .tinted()
@@ -21,7 +21,7 @@ final class HomeViewController: UIViewController {
         return button
     }()
 
-    private let presentViewControllerButton: UIButton = {
+    private(set) var presentViewControllerButton: UIButton = {
         let button = UIButton()
         button.setTitle("Present ViewController", for: .normal)
         button.configuration = .tinted()
