@@ -5,9 +5,7 @@ import XCTest
 final class HomeViewControllerTests: XCTestCase {
 
     func test_tappingPushButton_shouldPushProfileViewController() {
-        let sut = HomeViewController()
-        sut.loadViewIfNeeded()
-        let navigationController = UINavigationController(rootViewController: sut)
+        let (sut, navigationController) = makeSUT()
 
         tap(sut.pushViewControllerButton)
 
@@ -26,6 +24,13 @@ final class HomeViewControllerTests: XCTestCase {
     }
 
     // MARK: - Helpers
+
+    private func makeSUT() -> (sut: HomeViewController, navigationControllerL: UINavigationController) {
+        let sut = HomeViewController()
+        sut.loadViewIfNeeded()
+        let navigationController = UINavigationController(rootViewController: sut)
+        return (sut, navigationController)
+    }
 
     private func executeRunLoop() {
         RunLoop.current.run(until: Date())
