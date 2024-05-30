@@ -2,6 +2,8 @@ import Foundation
 import XCTest
 @testable import NavigationTests
 
+final class NavigationControllerMock: UINavigationController {}
+
 final class HomeViewControllerTests: XCTestCase {
 
     func test_tappingPushButton_shouldPushProfileViewController() {
