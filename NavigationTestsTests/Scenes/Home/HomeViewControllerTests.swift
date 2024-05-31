@@ -2,7 +2,20 @@ import Foundation
 import XCTest
 @testable import NavigationTests
 
-final class NavigationControllerMock: UINavigationController {}
+final class NavigationControllerMock: UINavigationController {
+
+    // MARK: - Private(set) properties
+
+    private(set) var viewControllerArgs = [UIViewController]()
+    private(set) var pushViewControllerArgsAnimated = [Bool]()
+
+    // MARK: - Methods
+
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        viewControllerArgs.append(viewController)
+        pushViewControllerArgsAnimated.append(animated)
+    }
+}
 
 final class HomeViewControllerTests: XCTestCase {
 
