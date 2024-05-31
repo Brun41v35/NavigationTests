@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E06C3662C0A4907008D5B3A /* NavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E06C3652C0A4907008D5B3A /* NavigationControllerMock.swift */; };
 		7E6716A92C001EDF007F5CEA /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6716A82C001EDF007F5CEA /* HomeViewControllerTests.swift */; };
 		7EAE16D42C00018B00773A6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAE16D32C00018B00773A6B /* AppDelegate.swift */; };
 		7EAE16D62C00018B00773A6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAE16D52C00018B00773A6B /* SceneDelegate.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E06C3652C0A4907008D5B3A /* NavigationControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerMock.swift; sourceTree = "<group>"; };
 		7E6716A82C001EDF007F5CEA /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		7EAE16D02C00018B00773A6B /* NavigationTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAE16D32C00018B00773A6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,9 +59,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E06C3642C0A48FC008D5B3A /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				7E06C3652C0A4907008D5B3A /* NavigationControllerMock.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
 		7E6716A62C001EC8007F5CEA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7E06C3642C0A48FC008D5B3A /* Doubles */,
 				7E6716A72C001ED0007F5CEA /* Home */,
 			);
 			path = Scenes;
@@ -266,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E6716A92C001EDF007F5CEA /* HomeViewControllerTests.swift in Sources */,
+				7E06C3662C0A4907008D5B3A /* NavigationControllerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
