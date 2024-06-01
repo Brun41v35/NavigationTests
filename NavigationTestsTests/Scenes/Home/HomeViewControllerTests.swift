@@ -9,8 +9,6 @@ final class HomeViewControllerTests: XCTestCase {
 
         tap(sut.pushViewControllerButton)
 
-        executeRunLoop()
-
         XCTAssertEqual(navigationController.viewControllerArgs.count, 2, "Navigation Stack")
 
         let pushedViewController = navigationController.viewControllerArgs.last
@@ -30,10 +28,6 @@ final class HomeViewControllerTests: XCTestCase {
         sut.loadViewIfNeeded()
         let navigationController = NavigationControllerMock(rootViewController: sut)
         return (sut, navigationController)
-    }
-
-    private func executeRunLoop() {
-        RunLoop.current.run(until: Date())
     }
 
     private func tap(_ button: UIButton) {
