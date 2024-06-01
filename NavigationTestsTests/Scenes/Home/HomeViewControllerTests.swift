@@ -11,9 +11,9 @@ final class HomeViewControllerTests: XCTestCase {
 
         executeRunLoop()
 
-        XCTAssertEqual(navigationController.viewControllers.count, 2, "Navigation Stack")
-        
-        let pushedViewController = navigationController.viewControllers.last
+        XCTAssertEqual(navigationController.viewControllerArgs.count, 2, "Navigation Stack")
+
+        let pushedViewController = navigationController.viewControllerArgs.last
 
         guard let profileViewController = pushedViewController as? ProfileViewController else {
             XCTFail("Expected ProfileViewController, but was \(String(describing: pushedViewController))")
@@ -25,10 +25,10 @@ final class HomeViewControllerTests: XCTestCase {
 
     // MARK: - Helpers
 
-    private func makeSUT() -> (sut: HomeViewController, navigationControllerL: UINavigationController) {
+    private func makeSUT() -> (sut: HomeViewController, navigationControllerL: NavigationControllerMock) {
         let sut = HomeViewController()
         sut.loadViewIfNeeded()
-        let navigationController = UINavigationController(rootViewController: sut)
+        let navigationController = NavigationControllerMock(rootViewController: sut)
         return (sut, navigationController)
     }
 
