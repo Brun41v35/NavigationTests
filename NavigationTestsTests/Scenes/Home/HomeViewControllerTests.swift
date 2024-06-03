@@ -21,6 +21,12 @@ final class HomeViewControllerTests: XCTestCase {
         XCTAssertEqual(profileViewController.textLabel.text, "Pushed from Code")
     }
 
+    func test_tappingPresentButton_shouldPresentProfileViewController() {
+        let sut = HomeViewController()
+        sut.loadViewIfNeeded()
+        sut.presentViewControllerButton.sendActions(for: .touchUpInside)
+    }
+
     // MARK: - Helpers
 
     private func makeSUT() -> (sut: HomeViewController, navigationControllerL: NavigationControllerMock) {
